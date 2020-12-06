@@ -1,6 +1,4 @@
 package edu.touro.cs;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Comparator;
 import java.util.List;
@@ -23,8 +21,7 @@ public class MyCollections { // a utility class like java.util.Collections
     static <T> T max(List<T> list, Comparator<T> cmp) {return null;}
 
     // the minimum value of all elements in list (comparator ordering)
-    @Contract(pure = true)
-    static <T > @Nullable T min(List<T> list, Comparator<T> cmp)  {return null;}
+    static <T > T min(List<T> list, Comparator<T> cmp)  {return null;}
 
     // the rank specifies how far from the max.
     // E.g. rank=0, return the max.
